@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div ng-controller="mainController">
+        <div>
+        <h1>What is your twitter name?</h1>
+        <input type="text" ng-model="handle">    
+        </div>
+        
+        <h1>Hello {{handleLowercase()}}</h1>
+    </div>
+    <script src="/node_modules/angular/angular.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

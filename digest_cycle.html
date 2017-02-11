@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Digest Loop</title>
+</head>
+<body>
+    <div ng-controller="myController">
+        <div>
+            <label for="myName">Enter your Name: </label>
+            <input name="myName" type="text" ng-model="handle">
+        </div>
+        
+        <h1>Hello {{handle}}</h1>
+    </div>
+    <script src="/node_modules/angular/angular.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
