@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div ng-controller="myController">
+            
+            <div>
+                <label for="Phrase">Input Your Secret Phrase</label>
+                <input type="text" name="Phrase" placeholder="Enter Your Secret Phrase" ng-model='Phrase'>
+            </div>
+
+            <div class="alert" ng-show="Phrase.length !== phraseLength"
+            ng-class="{ 'alert-warning': Phrase.length<phraseLength, 'alert-danger': Phrase.length > phraseLength}">
+
+                <div ng-show="Phrase.length < phraseLength">
+                    Its less than {{phraseLength}} characters
+                </div>
+                <div ng-show="Phrase.length > phraseLength">
+                    Its more than {{phraseLength}} characters
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+    <script src="/node_modules/angular/angular.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
