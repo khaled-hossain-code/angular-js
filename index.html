@@ -6,11 +6,21 @@
     <link rel="stylesheet" type="text/css" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
 </head>
 <body>
+    <header>
+        <nav class="navbar navbar-default">
+            <div>
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/">AngularJs</a>
+                </div>
+                <div class="nav navbar-nav navbar-right">
+                    <li><a href="#/"><i class="fa fa-home"></i>Home</a></li>
+                    <li><a href="#/second"><i></i>Second</a></li>
+                </div>
+            </div>
+        </nav>
+    </header>
     <div class="container">
-        <div ng-controller="myController">
-            <h1>Click Me to Fetch Data</h1>
-            <a href="#/bookmark">Go To Bookmark</a>
-        </div>
+        <div ng-view></div>
     </div>
     <script src="/node_modules/angular/angular.js"></script>
     <script src="//code.angularjs.org/1.5.9/angular-route.min.js"></script>
