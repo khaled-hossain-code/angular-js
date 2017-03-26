@@ -8,17 +8,12 @@
 <body>
     <div class="container">
         <div ng-controller="myController">
-            
             <h1>Click Me to Fetch Data</h1>
-            <input type="button" name="clickMe" value="click me" ng-click="alertClick()">
-            <ul>
-               <li ng-repeat="value in values">{{user.name}}</li>
-            </ul>
-            <h2>{{value}}</h2>
-
+            <a href="#/bookmark">Go To Bookmark</a>
         </div>
     </div>
     <script src="/node_modules/angular/angular.js"></script>
+    <script src="//code.angularjs.org/1.5.9/angular-route.min.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
